@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+section{
+  height: 100vh;
+}
+.banner{
+  height: 10vh;
+  background-color: #040649;
+  text-align: center;
+  padding-top: 5vh;
+}
+.banner a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-left: 2px solid white;
+}
+
+.seccion-inicio{
+  background-color: black;
+  position: relative;
+}
+
+.datos-inicio{
+  position: absolute;
+  width: 15%;
+  height: 20vh;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+}
+
+.seccion-servicios{
+
+}
+
+.seccion-servicios h1{
+  display: inline-block;
+  font-size: 10vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.seccion-servicios h2{
+  display: inline-block;
+  font-size: 4vh;
+}
+
+.seccion-servicios a{
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.fotos-servicios{
+  width: 90%;
+  height: 77vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid red;
+}
+.columna-1{
+  width:27%;
+  height: 77vh;
+  border: 1px solid green;
+  display: inline-block;
+  margin-right: 2.4%;
+
+}
+.columna-2{
+  width:27%;
+  height: 77vh;
+  border: 1px solid green;
+  display: inline-block;
+  margin-right: 2.4%;
+
+}
+.columna-3{
+  width:40%;
+  height: 77vh;
+  border: 1px solid green;
+  display: inline-block;
+
+}
+
+.fila-11{
+  width:100%;
+  height: 30vh;
+  border: 1px solid blue;
+}
+
+.fila-21{
+  width:100%;
+  height: 40vh;
+  border: 1px solid blue;
+  margin-top: 7vh;
+}
+
+.fila-13{
+  width:100%;
+  height: 30vh;
+  border: 1px solid blue;
+}
+
+.fila-23{
+  width:100%;
+  height: 40vh;
+  border: 1px solid blue;
+  margin-bottom: 7vh;
+}
