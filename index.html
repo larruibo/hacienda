@@ -5,20 +5,23 @@
     <title>Hacienda El Salitre</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   </head>
   <body>
 
-    <section class="seccion-inicio">
+    <section id="inicio" class="seccion-inicio">
       <div class="banner">
         <div class="logo-banner">
 
         </div>
-        <a href="#">Inicio</a>
-        <a href="#">La Hacienda</a>
-        <a href="#">Video</a>
-        <a href="#">Puntos Fotográficos</a>
-        <a href="#">Proveedores</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#hacienda">La Hacienda</a>
+        <a href="#video">Video</a>
+        <a href="#puntos">Puntos Fotográficos</a>
+        <a href="#final">Proveedores</a>
+        <a href="#formulario">Contacto</a>
       </div>
 
       <div class="datos-inicio">
@@ -29,7 +32,7 @@
       </div>
 
     </section>
-    <section class="seccion-servicios">
+    <section id="servicios" class="seccion-servicios">
       <h1>Servicios</h1>
       <a href="#"><h2>Camerino</h2></a>
       <a href="#"><h2>Capilla</h2></a>
@@ -58,20 +61,122 @@
         </div>
       </div>
     </section>
-    <section class="seccion-lahacienda">
+    <section id="hacienda" class="seccion-lahacienda">
+      <div class="contenido-lahacienda">
+        <div class="info-lahacienda">
+          <h1>La Hacienda</h1>
+          <h3>Hacienda El Salitre, el primer paso para una vida llena de felicidad.</h3>
+          <p>Localizada a tan solo 45 minutos de Bogotá, la Hacienda cuenta con un paisaje idílico de 5 hectáreas con los jardines más bellos de la sabana y las instalaciones más modernas y confortables donde por más de diez años se han celebrado <strong>los matrimonios campestres más hermosos.</strong></p>
+          <p>En el Salitre ponemos a disposición de los novios y sus invitados toda nuestra experiencia cuidando cada detalle para que el recuerdo de su boda perdure para siempre.</p>
+        </div>
+      </div>
+      <div class="foto-lahacienda">
 
+      </div>
     </section>
-    <section class="seccion-video">
+    <section id="video" class="seccion-video">
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ozXIAg7zp9I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="puntos" class="seccion-puntos">
+      <h1>Puntos Fotográficos</h1>
+    </section>
+    <section id="formulario" class="seccion-formulario">
+      <form class="formulario" action="index.html" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" value="">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" value="">
+        <label for="telephone">Teléfono</label>
+        <input type="text" name="telephone" value="">
+        <label for="type">Tipo de Evento</label>
+        <input type="text" name="type" value="">
+        <label for="date">Fecha Deseada</label>
+        <input id="datepicker" type="date" name="date" value=""></input>
+        <label for="description">Descripción</label>
+        <textarea name="description" rows="5" cols="40"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    <section id="final" class="seccion-final">
+      <div class="iconos-marcas">
+        <div class="iconos-grid">
+          <div class="icono">
 
-    </section>
-    <section class="seccion-puntos">
+          </div>
+          <div class="icono">
 
-    </section>
-    <section seccion="seccion-formulario">
+          </div>
+          <div class="icono">
 
-    </section>
-    <section class="seccion-final">
+          </div>
+          <div class="icono">
 
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+          <div class="icono">
+
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="info-footer">
+          <div class="logo-footer">
+
+          </div>
+          <div class="redes-footer">
+            <span>Síguenos</span>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          </div>
+          <div class="contacto-footer">
+            <span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>haciendaelsalitre@gmail.com</span>
+            <span><i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>+57 315 846 4211 - 8052632</span>
+          </div>
+        </div>
+      </footer>
     </section>
+    <a href="#formulario"><div class="flotante">
+      <span>Contacto</span>
+    </div></a>
+
+    <script type="text/javascript">
+      var date = new Date();
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      if (month < 10) month = "0" + month;
+      if (day < 10) day = "0" + day;
+      var today = year + "-" + month + "-" + day;
+      document.getElementById('datepicker').min = today;
+
+      $('a[href*=#]').click(function(event){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
