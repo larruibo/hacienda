@@ -30,11 +30,15 @@ section{
 
 .datos-inicio{
   position: absolute;
-  width: 15%;
+  width: 20%;
   height: 20vh;
   bottom: 8%;
   right: 5%;
   color: white;
+}
+.datos-inicio span{
+  display: block;
+  margin-bottom: 1vh;
 }
 
 .seccion-servicios{
@@ -309,6 +313,10 @@ section{
 
 .fa-lg{
   color: #040649;
+  margin-right: 5%;
+}
+.white.fa-lg{
+  color: white;
   margin-right: 5%;
 }
 .flotante{
