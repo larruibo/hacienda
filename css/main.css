@@ -9,11 +9,21 @@ section{
 }
 .banner{
   height: 10vh;
-  background-color: #040649;
-  text-align: center;
+  background-color: #11192D;
   padding-top: 5vh;
+  position: relative;
+  z-index: 2;
 }
-.banner a{
+.nav-banner{
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  height: 10vh;
+  position: absolute;
+  top: 5vh;
+  left: 20%;
+}
+.nav-banner a{
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -22,10 +32,35 @@ section{
   padding-right: 1%;
   border-left: 2px solid white;
 }
+.logo-banner{
+  width: 10%;
+  height: 15vh;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.logo-banner img{
+  width: 85%;
+
+}
 
 .seccion-inicio{
   background-color: black;
   position: relative;
+}
+
+.imagen-inicio{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.imagen-inicio img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .datos-inicio{
@@ -35,10 +70,14 @@ section{
   bottom: 8%;
   right: 5%;
   color: white;
+  z-index: 3;
 }
 .datos-inicio span{
   display: block;
   margin-bottom: 1vh;
+}
+.datos-inicio h2{
+  display: inline-block;
 }
 
 .seccion-servicios{
@@ -52,13 +91,13 @@ section{
   margin-right: 5%;
   margin-top: 1%;
   margin-bottom: 1%;
-  color: #040649;
+  color: #11192D;
 }
 
 .seccion-servicios h2{
   display: inline-block;
   font-size: 4vh;
-  color: #040649;
+  color: #11192D;
 }
 
 .seccion-servicios a{
@@ -66,7 +105,7 @@ section{
   margin-right: 1%;
   margin-top: 2%;
   margin-bottom: 2%;
-  color: #040649;
+  color: #11192D;
 }
 
 .fotos-servicios{
@@ -74,56 +113,130 @@ section{
   height: 77vh;
   margin-left: 5%;
   margin-right: 5%;
-  border: 1px solid red;
+  position: relative;
 }
 .columna-1{
-  width:27%;
+  width:30%;
   height: 77vh;
-  border: 1px solid green;
   display: inline-block;
   margin-right: 2.4%;
+  position: relative;
 
 }
 .columna-2{
-  width:27%;
+  width:30%;
   height: 77vh;
-  border: 1px solid green;
   display: inline-block;
   margin-right: 2.4%;
+  position: relative;
 
 }
-.columna-3{
-  width:40%;
+.columna-2 img{
+  width: 100%;
   height: 77vh;
-  border: 1px solid green;
+  object-fit: cover;
+  object-position: 40%;
+}
+.columna-3{
+  width:34%;
+  height: 77vh;
   display: inline-block;
+  position: relative;
 
 }
 
 .fila-11{
   width:100%;
   height: 30vh;
-  border: 1px solid blue;
+  position: absolute;
+}
+.fila-11 img{
+  width: 100%;
+  height: 30vh;
+}
+.descripcion{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17, 25, 45, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.descripcion h3{
+  font-size: 4vh;
+  text-align: center;
+}
+.descripcion p{
+  font-size: 2vh;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.fila-11:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.fila-21:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.fila-23:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.fila-13:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.columna-2:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
 }
 
 .fila-21{
   width:100%;
   height: 40vh;
-  border: 1px solid blue;
   margin-top: 7vh;
+  position: absolute;
+  bottom: 0;
+}
+.fila-21 img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
 }
 
 .fila-13{
   width:100%;
   height: 30vh;
-  border: 1px solid blue;
+  position: absolute;
+  bottom: 0;
+}
+.fila-13 img{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+
 }
 
 .fila-23{
   width:100%;
   height: 40vh;
-  border: 1px solid blue;
   margin-bottom: 7vh;
+  position: absolute;
+}
+.fila-23 img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+
 }
 
 .seccion-lahacienda{
@@ -132,7 +245,6 @@ section{
 .contenido-lahacienda{
   width: 49%;
   height: 100vh;
-  border: 1px solid red;
   position: absolute;
   left: 0;
 }
@@ -140,7 +252,7 @@ section{
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  color: #040649;
+  color: #11192D;
 }
 
 .info-lahacienda h1{
@@ -169,7 +281,6 @@ section{
   height: 70vh;
   margin-left: 10%;
   margin-right: 10%;
-  border: 1px solid red;
   position: absolute;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -181,28 +292,122 @@ section{
 	width: 100%;
 	height: 100%;
 }
+
+.seccion-puntos h1{
+  display: inline-block;
+  font-size: 10vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #11192D;
+}
+
+.columna-4{
+  width:41.6%;
+  height: 77vh;
+  display: inline-block;
+  margin-right: 2.4%;
+  position: absolute;
+  left: 0;
+
+
+}
+.columna-4 img{
+  width: 100%;
+  height: 77vh;
+  object-fit: cover;
+}
+.columna-5{
+  width:55%;
+  height: 77vh;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+
+}
+
+.columna-6{
+  width: 50%;
+  height: 50vh;
+  display: inline-block;
+  margin-right: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.columna-6 img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.columna-7{
+  width: 43.4%;
+  height: 50vh;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.columna-7 img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+
+.fila-51{
+  width:100%;
+  height: 20vh;
+  position: absolute;
+  top: 0;
+}
+.fila-51 img{
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 0% 80%;
+}
+
+.fila-52{
+  width:100%;
+  height: 50vh;
+  margin-top: 27vh;
+}
+
 .seccion-formulario{
   position: relative;
-  background-color: #040649;
+  background-color: #11192D;
+}
+.seccion-formulario img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.imagen-formulario{
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  z-index: 1;
 }
 .formulario{
-  width: 30%;
+  width: 25%;
   height: 62vh;
   top: 15vh;
-  right: 20%;
+  left: 5%;
   position: absolute;
-  padding-left: 5%;
+  padding-left: 3%;
   padding-top: 8vh;
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 8px 0 rgba(255, 255, 255, 0.2), 0 15px 20px 0 rgba(255, 255, 255, 0.19);
   border-radius: 4px;
+  z-index: 2;
 
 
 }
 .formulario label{
   display: inline-block;
   color: white;
-  font-weight: bold;
 }
 .formulario input{
   display: block;
@@ -210,19 +415,19 @@ section{
   background-color: transparent;
   padding: 0.5%;
   width: 40%;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 4px;
   color: white;
-  font-weight: bold;
 }
 .formulario textarea{
   display: block;
   margin-bottom: 2vh;
   resize: none;
   background-color: transparent;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 4px;
   width: 70%;
+  color: white;
 }
 .seccion-final{
   position: relative;
@@ -234,18 +439,18 @@ section{
   top: 0;
 }
 .iconos-grid{
-  border: 1px solid red;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 15vh;
-  height: 41vh;
+  height: 45vh;
 }
 .icono{
   display: inline-block;
-  width: 16%;
+  width: 15%;
   height: 20vh;
-  border: 1px solid green;
+  margin-right: 1.1%;
+  margin-bottom: 2vh;
 }
 .footer{
   position: absolute;
@@ -258,21 +463,24 @@ section{
   margin-right: 6%;
   margin-top: 8vh;
   width: 88%;
-  border-top: 1px solid #040649;
+  border-top: 1px solid #11192D;
   position: relative;
 }
 .logo-footer{
   margin-top: 3vh;
   width: 10%;
   height: 15vh;
-  border: 1px solid red;
   display: inline-block;
+}
+.logo-footer img{
+  width: 85%;
+  margin-top: 15%;
+  margin-left: 10%;
 }
 .redes-footer{
   width: 30%;
   margin-top: 3vh;
   height: 12vh;
-  border: 1px solid green;
   display: inline-block;
   position: absolute;
   padding-top: 3vh;
@@ -281,19 +489,18 @@ section{
   display: block;
   font-size: 3vh;
   margin-left: 10%;
-  color: #040649;
+  color: #11192D;
 }
 .redes-footer a{
   display: inline-block;
   font-size: 3vh;
   margin-left: 10%;
-  color: #040649;
+  color: #11192D;
 }
 .contacto-footer{
   width: 35%;
   height: 12vh;
   margin-top: 3vh;
-  border: 1px solid blue;
   display: inline-block;
   padding-left: 5%;
   position: absolute;
@@ -304,15 +511,15 @@ section{
   display: block;
   font-size: 3vh;
   margin-bottom: 0.5vh;
-  color: #040649;
+  color: #11192D;
 }
 .fa-2x{
-  color: #040649;
+  color: #11192D;
   margin-right: 5%;
 }
 
 .fa-lg{
-  color: #040649;
+  color: #11192D;
   margin-right: 5%;
 }
 .white.fa-lg{
@@ -325,10 +532,11 @@ section{
   bottom: 0;
   width: 5%;
   height: 5%;
-  background-color: #040649;
+  background-color: #11192D;
   border-top-left-radius: 8px;
   width: 10%;
   text-align: center;
+  z-index: 100;
 }
 .flotante span{
   width: 100%;
