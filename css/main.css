@@ -16,12 +16,14 @@ section{
   z-index: 2;
 }
 .nav-banner{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 70%;
   height: 10vh;
   position: absolute;
-  top: 5vh;
+  top: 3vh;
   left: 20%;
 }
 .nav-banner a{
@@ -136,7 +138,7 @@ section{
   width: 100%;
   height: 77vh;
   object-fit: cover;
-  object-position: 40%;
+  object-position: 50%;
 }
 .columna-3{
   width:34%;
@@ -161,7 +163,7 @@ section{
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(17, 25, 45, 0.72);
+  background: rgba(17, 25, 45, 0.45);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -197,6 +199,22 @@ section{
   opacity: 1;
 }
 .columna-2:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.columna-4:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.columna-7:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.columna-6:hover .descripcion{
+  visibility: visible;
+  opacity: 1;
+}
+.fila-51:hover .descripcion{
   visibility: visible;
   opacity: 1;
 }
@@ -244,40 +262,51 @@ section{
   position: relative;
 }
 .contenido-lahacienda{
-  width: 49%;
-  height: 100vh;
+  width: 50%;
+  height: 80vh;
   position: absolute;
-  left: 0;
+  left: 5%;
+  top: 10vh;
+  background-color: rgba(0,0,0, 0.4);
+  box-shadow: 0 15px 8px 0 rgba(255, 255, 255, 0.2), 0 15px 20px 0 rgba(255, 255, 255, 0.19);
+  z-index: 2;
 }
 .info-lahacienda{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: #11192D;
+  width: 100%;
+  color: white;
 }
 
 .info-lahacienda h1{
-  font-size: 10vh;
+  font-size: 8vh;
+  padding-left: 2%;
 }
 .info-lahacienda h3{
   font-size: 4vh;
   padding-left: 5%;
+  padding-right: 5%;
   text-align: justify;
 }
 .info-lahacienda p{
   font-size: 3vh;
   padding-left: 5%;
+  padding-right: 5%;
   text-align: justify;
 }
 .foto-lahacienda{
-  width:49%;
+  width:100%;
   height: 100vh;
-  border: 1px solid black;
   position: absolute;
   right: 0;
+  z-index: 1;
+}
+.foto-lahacienda img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
 }
 .seccion-video{
-  background-color: #11192D;
+  background-color: black;
 }
 .video{
   width: 80%;
