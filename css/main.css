@@ -7,6 +7,7 @@ body{
 section{
   height: 100vh;
 }
+
 .banner{
   height: 10vh;
   background-color: #11192D;
@@ -80,8 +81,8 @@ section{
   display: inline-block;
 }
 
-.seccion-servicios{
-
+.seccion-servicios img{
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .seccion-servicios h1{
@@ -275,6 +276,9 @@ section{
   position: absolute;
   right: 0;
 }
+.seccion-video{
+  background-color: #11192D;
+}
 .video{
   width: 80%;
   margin-top: 15vh;
@@ -293,6 +297,9 @@ section{
 	height: 100%;
 }
 
+.seccion-puntos img{
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .seccion-puntos h1{
   display: inline-block;
   font-size: 10vh;
