@@ -1,3 +1,7 @@
+<!-- <?php
+include_once('sendmail.php');
+?> -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
 
@@ -27,7 +32,7 @@
 
       </div>
       <div class="imagen-inicio">
-        <img src="fotos/banner-hacienda/1.jpg" alt="">
+        <img id="foto-banner" src="fotos/banner-hacienda/1.jpg" alt="">
       </div>
       <div class="datos-inicio">
         <span><i class="fa fa-map-marker fa-lg white" aria-hidden="true"></i><h2>Sopó, Colombia</h2></span>
@@ -39,16 +44,16 @@
     </section>
     <section id="servicios" class="seccion-servicios">
       <h1>Servicios</h1>
-      <a><h2>Camerino</h2></a>
-      <a><h2>Capilla</h2></a>
-      <a><h2>Salón</h2></a>
-      <a><h2>Casa de Muñecas</h2></a>
-      <a><h2>Ceremonias</h2></a>
+      <!-- <a id="titulo-camerino"><h2>Camerino</h2></a>
+      <a id="titulo-capilla"><h2>Capilla</h2></a>
+      <a id="titulo-salon"><h2>Salón</h2></a>
+      <a id="titulo-munecas"><h2>Casa de Muñecas</h2></a>
+      <a id="titulo-boda"><h2>Ceremonias</h2></a> -->
       <div class="fotos-servicios">
         <div class="columna-1">
           <div class="fila-11">
-            <img src="fotos/servicios-hacienda/6.jpg" alt="">
-            <div class="descripcion">
+            <img id="camerino" src="fotos/servicios-hacienda/6.jpg" alt="">
+            <div id="descripcion-camerino" class="descripcion">
               <div>
                 <h3>Camerino</h3>
                 <p>Ofrecemos un espacio especial rodeado de hermosos jardines donde la novia y sus damas podrán compartir antes del gran momento.</p>
@@ -56,7 +61,7 @@
               </div>
               </div>
           <div class="fila-21">
-            <img src="fotos/servicios-hacienda/11.jpg" alt="">
+            <img id="munecas" src="fotos/servicios-hacienda/11.jpg" alt="">
             <div class="descripcion">
               <div>
                 <h3>Casa de Muñecas</h3>
@@ -66,7 +71,7 @@
           </div>
         </div>
         <div class="columna-2">
-          <img src="fotos/servicios-hacienda/1.jpg" alt="">
+          <img id="boda" src="fotos/servicios-hacienda/1.jpg" alt="">
           <div class="descripcion">
             <div>
               <h3>Bodas al Aire Libre</h3>
@@ -76,7 +81,7 @@
         </div>
         <div class="columna-3">
           <div class="fila-23">
-            <img src="fotos/servicios-hacienda/14.jpg" alt="">
+            <img id="salon" src="fotos/servicios-hacienda/14.jpg" alt="">
             <div class="descripcion">
               <div>
                 <h3>Salón de Eventos</h3>
@@ -86,7 +91,7 @@
             </div>
           </div>
           <div class="fila-13">
-            <img src="fotos/servicios-hacienda/9.jpg" alt="">
+            <img id="capilla" src="fotos/servicios-hacienda/9.jpg" alt="">
             <div class="descripcion">
               <div>
                 <h3>Capilla</h3>
@@ -160,19 +165,19 @@
       <div class="imagen-formulario">
         <img src="fotos/servicios-hacienda/1.jpg" alt="">
       </div>
-      <form class="formulario" action="index.html" method="post">
+      <form class="formulario" action="#" method="post">
         <label for="name">Nombre</label>
-        <input type="text" name="name" value="">
+        <input type="text" name="name" value="" required>
         <label for="email">E-mail</label>
-        <input type="email" name="email" value="">
+        <input type="email" name="email" value="" required>
         <label for="telephone">Teléfono</label>
-        <input type="text" name="telephone" value="">
+        <input type="text" name="telephone" value="" required>
         <label for="type">Tipo de Evento</label>
-        <input type="text" name="type" value="">
+        <input type="text" name="type" value="" required>
         <label for="date">Fecha Deseada</label>
-        <input id="datepicker" type="date" name="date" value=""></input>
+        <input id="datepicker" type="date" name="date" value="" required></input>
         <label for="description">Descripción</label>
-        <textarea name="description" rows="5" cols="40"></textarea>
+        <textarea name="description" rows="5" cols="40" required></textarea>
         <input type="submit" value="Enviar">
       </form>
     </section>
@@ -238,22 +243,5 @@
       <span>Contacto</span>
     </div></a>
 
-    <script type="text/javascript">
-      var date = new Date();
-      var day = date.getDate();
-      var month = date.getMonth() + 1;
-      var year = date.getFullYear();
-      if (month < 10) month = "0" + month;
-      if (day < 10) day = "0" + day;
-      var today = year + "-" + month + "-" + day;
-      document.getElementById('datepicker').min = today;
-
-      $('a[href*=#]').click(function(event){
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        event.preventDefault();
-      });
-    </script>
   </body>
 </html>
