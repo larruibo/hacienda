@@ -94,7 +94,7 @@ section{
 
 .seccion-servicios h1{
   display: inline-block;
-  font-size: 10vh;
+  font-size: 8vh;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 1%;
@@ -317,9 +317,18 @@ section{
 .seccion-video{
   background-color: black;
 }
+.seccion-video h1{
+  display: inline-block;
+  font-size: 8vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: white;
+}
 .video{
   width: 80%;
-  margin-top: 15vh;
+  margin-top: 4vh;
   height: 70vh;
   margin-left: 10%;
   margin-right: 10%;
@@ -340,7 +349,7 @@ section{
 }
 .seccion-puntos h1{
   display: inline-block;
-  font-size: 10vh;
+  font-size: 8vh;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 1%;
