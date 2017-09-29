@@ -1,6 +1,3 @@
-<!-- <?php
-include_once('sendmail.php');
-?> -->
 
 <!DOCTYPE html>
 <html>
@@ -38,8 +35,11 @@ include_once('sendmail.php');
       <div class="datos-inicio">
         <span><i class="fa fa-map-marker fa-lg white" aria-hidden="true"></i><h2>Sopó, Colombia</h2></span>
         <span><i class="fa fa-envelope fa-lg white" aria-hidden="true"></i>haciendaelsalitre@gmail.com</span>
-        <span><i class="fa fa-phone-square fa-lg white" aria-hidden="true"></i>+57 315 846 4211 - 8052632</span>
-
+        <span><i class="fa fa-phone-square fa-lg white" aria-hidden="true"></i>(+57) 315 846 4211 - (+57) 315 801 5404</span>
+        <span><i class="fa fa-phone-square fa-lg white" aria-hidden="true"></i>(+1) 8052632</span>
+      </div>
+      <div class="promociones">
+        <h2>Fechas en Enero y Febrero de 2018 con precios de 2017.</h2>
       </div>
 
     </section>
@@ -117,7 +117,7 @@ include_once('sendmail.php');
       </div>
     </section>
     <section id="video" class="seccion-video">
-      <h1>Recorrido Virtual</h1>
+      <h1>Recorre la Hacienda</h1>
       <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_SG7oTEKwt0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -167,7 +167,7 @@ include_once('sendmail.php');
       <div class="imagen-formulario">
         <img src="fotos/servicios-hacienda/1.jpg" alt="">
       </div>
-      <form class="formulario" action="#" method="post">
+      <form class="formulario" action="/index.php" method="post" enctype="text/plain">
         <label for="name">Nombre</label>
         <input type="text" name="name" value="" required>
         <label for="email">E-mail</label>
@@ -231,12 +231,13 @@ include_once('sendmail.php');
           </div>
           <div class="redes-footer">
             <span>Síguenos</span>
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Haciendaelsalitre" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/haciendaelsalitre" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
           </div>
           <div class="contacto-footer">
             <span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>haciendaelsalitre@gmail.com</span>
-            <span><i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>+57 315 846 4211 - 8052632</span>
+            <span><i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>(+57) 315 846 4211 - (+57) 315 801 5404</span>
+            <span><i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>(1) 8052632</span>
           </div>
         </div>
       </footer>
@@ -244,6 +245,6 @@ include_once('sendmail.php');
     <a href="#formulario"><div class="flotante">
       <span>Contacto</span>
     </div></a>
-
+    <?php include_once('sendmail.php'); ?>
   </body>
 </html>

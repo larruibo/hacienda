@@ -9,9 +9,9 @@ section{
 }
 
 .banner{
-  height: 10vh;
+  height: 8vh;
   background-color: #11192D;
-  padding-top: 5vh;
+  padding-top: 4vh;
   position: relative;
   z-index: 2;
 }
@@ -21,9 +21,9 @@ section{
   align-items: center;
   text-align: center;
   width: 70%;
-  height: 10vh;
+  height: 4vh;
   position: absolute;
-  top: 3vh;
+  top: 4vh;
   left: 20%;
 }
 .nav-banner a{
@@ -36,15 +36,32 @@ section{
   border-left: 2px solid white;
 }
 .logo-banner{
-  width: 10%;
-  height: 15vh;
+  width: 7%;
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 5%;
+  top: -4%;
+  left: 7%;
 }
 .logo-banner img{
-  width: 85%;
+  width: 95%;
+
+}
+
+.promociones{
+  background-color: rgba(17, 25, 45, 0.45);
+  position: absolute;
+  width: 40%;
+  height: 15vh;
+  bottom: 5%;
+  left: 5%;
+  z-index: 4;
+  padding: 2%;
+}
+
+.promociones h2{
+  font-size: 6vh;
+  color: white;
+  margin: 1vh;
 
 }
 
@@ -68,7 +85,7 @@ section{
 
 .datos-inicio{
   position: absolute;
-  width: 20%;
+  width: 30%;
   height: 20vh;
   bottom: 8%;
   right: 5%;
@@ -180,7 +197,7 @@ section{
   justify-content: center;
 }
 .descripcion h3{
-  font-size: 8vh;
+  font-size: 6vh;
   text-align: center;
   margin-bottom: 1vh;
   margin-top: 1vh;
@@ -577,6 +594,11 @@ section{
   margin-right: 5%;
 }
 .white.fa-lg{
+  color: white;
+  margin-right: 5%;
+}
+
+.white.fa-2x{
   color: white;
   margin-right: 5%;
 }

@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
 
-  alert("Funciona JQuery");
   var date = new Date();
   var day = date.getDate();
   var month = date.getMonth() + 1;
@@ -36,6 +35,13 @@ jQuery(document).ready(function(){
   function changeBanner3(){
     $("#foto-banner").fadeTo(500,0.1, function() {
       $("#foto-banner").attr("src",'fotos/banner-hacienda/3.jpg');
+    }).fadeTo(1000,1);
+    setTimeout(changeBanner4, 8000);
+  }
+
+  function changeBanner4(){
+    $("#foto-banner").fadeTo(500,0.1, function() {
+      $("#foto-banner").attr("src",'fotos/banner-hacienda/4.jpg');
     }).fadeTo(1000,1);
     setTimeout(changeBanner1, 8000);
   }
