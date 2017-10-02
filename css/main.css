@@ -4,9 +4,6 @@ body{
 
 }
 
-section{
-  height: 100vh;
-}
 
 .banner{
   height: 8vh;
@@ -14,6 +11,10 @@ section{
   padding-top: 4vh;
   position: relative;
   z-index: 2;
+}
+
+.banner-responsive{
+  display: none;
 }
 .nav-banner{
   display: flex;
@@ -30,10 +31,13 @@ section{
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  font-size: 3vh;
+  font-size: 2.5vh;
   padding-left: 1%;
   padding-right: 1%;
   border-left: 2px solid white;
+}
+.nav-banner a:hover {
+  color: gray;
 }
 .logo-banner{
   width: 7%;
@@ -68,6 +72,7 @@ section{
 .seccion-inicio{
   background-color: #11192D;
   position: relative;
+  height: 100vh;
 }
 
 .imagen-inicio{
@@ -100,6 +105,10 @@ section{
   display: inline-block;
 }
 
+
+.seccion-servicios{
+  height: 100vh;
+}
 .seccion-servicios img{
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -286,6 +295,7 @@ section{
 
 .seccion-lahacienda{
   position: relative;
+  height: 100vh;
 }
 .contenido-lahacienda{
   width: 50%;
@@ -333,6 +343,8 @@ section{
 }
 .seccion-video{
   background-color: black;
+  height: 100vh;
+  position: relative;
 }
 .seccion-video h1{
   display: inline-block;
@@ -361,6 +373,9 @@ section{
 	height: 100%;
 }
 
+.seccion-puntos{
+  height: 100vh;
+}
 .seccion-puntos img{
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -449,6 +464,7 @@ section{
 .seccion-formulario{
   position: relative;
   background-color: #11192D;
+  height: 100vh;
 }
 .seccion-formulario img{
   width: 100%;
@@ -502,6 +518,7 @@ section{
 }
 .seccion-final{
   position: relative;
+  height: 100vh;
 }
 .iconos-marcas{
   position: absolute;
@@ -620,4 +637,204 @@ section{
   font-weight:bold;
   text-decoration: none;
   font-size: 4vh;
+}
+@media screen and (max-width: 765px)
+{
+  .logo-banner{
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1050px)
+{
+  .banner{
+    display: none;
+  }
+  .banner-responsive{
+    display: block;
+    background-color: #11192D;
+    height: 10vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+
+  }
+  .logo-banner{
+    width: 15%;
+    position: relative;
+    left: 0;
+
+  }
+
+  .promociones{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    left: 0;
+    top: 6%;
+    height: auto;
+    text-align: center;
+  }
+  .promociones h2{
+    margin: 0;
+    font-size: 4vh;
+  }
+  .datos-inicio{
+    width: 90%;
+    height: auto;
+  }
+
+  .seccion-servicios{
+    height: auto;
+  }
+  .fotos-servicios{
+    height: auto;
+    margin-bottom: 5%;
+  }
+  .columna-1{
+    width: 100%;
+  }
+  .columna-2{
+    width: 100%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+  }
+  .columna-3{
+    width: 100%;
+    margin-bottom: 7vh;
+  }
+  .columna-4{
+    width: 100%;
+    position: relative;
+    margin-bottom: 7vh;
+  }
+  .columna-5{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 7vh;
+  }
+  .columna-6{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 7vh;
+  }
+  .columna-7{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 7vh;
+  }
+
+  .seccion-puntos{
+    height: auto;
+    position: relative;
+  }
+  .contenido-lahacienda{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    left: 0;
+    top: 0;
+  }
+
+  .info-lahacienda h1{
+    font-size: 6vh;
+  }
+  .info-lahacienda h3{
+    font-size: 3vh;
+  }
+  .info-lahacienda p{
+    font-size: 2.5vh;
+  }
+
+  .seccion-video h1{
+    font-size: 6vh;
+    margin-top: 8%;
+  }
+
+  .formulario{
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .formulario input{
+    width: 94%;
+    font-size: 20px;
+  }
+  .formulario textarea{
+    width: 94%;
+    font-size: 20px;
+  }
+
+  .formulario label{
+    font-size: 22px;
+  }
+
+  .iconos-marcas{
+    position: relative;
+    margin: 0;
+    height: auto;
+  }
+  .iconos-grid{
+    margin: 8%;
+    width: 90%;
+    height: auto;
+  }
+  .icono{
+    width: 30%;
+    height: auto;
+  }
+
+  .seccion-final{
+    height: auto;
+  }
+  .footer{
+    position: relative;
+    height: auto;
+  }
+  .logo-footer{
+    display: inline-block;
+    position: relative;
+    width: 48%;
+    height: auto;
+  }
+  .redes-footer{
+    display: inline-block;
+    position: relative;
+    width: 48%;
+    height: auto;
+    text-align: center;
+  }
+  .redes-footer span{
+    padding: 0;
+    margin: 0;
+  }
+  .redes-footer a{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+  .contacto-footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 12px !important;
+  }
+  .contacto-footer span{
+    font-size: 14px;
+  }
+
+  .flotante{
+    width: 35%;
+    right: 3%;
+    border-top-right-radius: 8px;
+  }
 }

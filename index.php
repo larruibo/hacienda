@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="fotos/logo-oscuro.png" />
   </head>
   <body>
@@ -26,6 +27,11 @@
           <a href="#puntos">Puntos Fotográficos</a>
           <a href="#final">Proveedores</a>
           <a href="#formulario">Contacto</a>
+        </div>
+      </div>
+      <div class="banner-responsive">
+        <div class="logo-banner">
+          <img src="fotos/logo-blanco.png" alt="">
         </div>
 
       </div>
