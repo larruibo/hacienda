@@ -55,7 +55,7 @@ body{
   background-color: rgba(17, 25, 45, 0.45);
   position: absolute;
   width: 40%;
-  height: 15vh;
+  height: auto;
   bottom: 5%;
   left: 5%;
   z-index: 4;
@@ -63,7 +63,7 @@ body{
 }
 
 .promociones h2{
-  font-size: 6vh;
+  font-size: 4.5vh;
   color: white;
   margin: 1vh;
 
@@ -586,7 +586,7 @@ body{
   color: #11192D;
 }
 .contacto-footer{
-  width: 35%;
+  width: 42%;
   height: 12vh;
   margin-top: 3vh;
   display: inline-block;
