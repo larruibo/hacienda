@@ -11,6 +11,11 @@
     <script src="js/index.js"></script>
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="fotos/logo-oscuro.png" />
+    <script>
+       function submitForm(token) {
+         document.getElementById("contactForm").submit();
+       }
+     </script>
   </head>
   <body>
 
@@ -45,7 +50,7 @@
         <span><i class="fa fa-phone-square fa-lg white" aria-hidden="true"></i>(+1) 8052632</span>
       </div>
       <div class="promociones">
-        <h2>Fechas en Enero y Febrero de 2018 con precios de 2017.</h2>
+        <h2>Fechas para corporativos de fin de año: 25 de Noviembre; 1, 15 y 23 de Diciembre. </h2>
       </div>
 
     </section>
@@ -173,7 +178,7 @@
       <div class="imagen-formulario">
         <img src="fotos/servicios-hacienda/1.jpg" alt="">
       </div>
-      <form class="formulario" action="/index.php" method="post" enctype="text/plain">
+      <form id="contactForm" class="formulario" action="/" method="post">
         <label for="name">Nombre</label>
         <input type="text" name="name" value="" required>
         <label for="email">E-mail</label>
@@ -186,7 +191,9 @@
         <input id="datepicker" type="date" name="date" value="" required></input>
         <label for="description">Descripción</label>
         <textarea name="description" rows="5" cols="40" required></textarea>
-        <input type="submit" value="Enviar">
+        <button class="g-recaptcha" data-sitekey="6LeR1DMUAAAAAEcBObfZPLLU0iz-AWeHKLj5qsJd" data-callback="submitForm">
+          Enviar
+        </button>
       </form>
     </section>
     <section id="final" class="seccion-final">
@@ -254,6 +261,7 @@
     <a href="#formulario"><div class="flotante">
       <span>Contacto</span>
     </div></a>
-    <!-- <?php include_once('sendmail.php'); ?> -->
+    <?php include_once('sendmail.php'); ?>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
