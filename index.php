@@ -16,6 +16,18 @@
          document.getElementById("contactForm").submit();
        }
      </script>
+    <script type="text/javascript"> _linkedin_data_partner_id = "150553"; </script>
+    <script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script>
+    <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=150553&fmt=gif" /> </noscript>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80978591-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-80978591-1');
+    </script>
   </head>
   <body>
 
@@ -50,7 +62,9 @@
         <span><i class="fa fa-phone-square fa-lg white" aria-hidden="true"></i>(+1) 8052632</span>
       </div>
       <div class="promociones">
-        <h2>Fechas para corporativos de fin de año: 25 de Noviembre; 1, 15 y 23 de Diciembre. </h2>
+        <h2>Promoción Corporativa</h2>
+        <h3>Fechas disponibles:</h3>
+        <h3>23 de Noviembre; Y 1, 15 y 23 de Diciembre.</h3>
       </div>
 
     </section>

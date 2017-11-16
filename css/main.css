@@ -68,6 +68,12 @@ body{
   margin: 1vh;
   text-align: justify;
 }
+.promociones h3{
+  font-size: 4vh;
+  color: white;
+  margin: 1vh;
+  text-align: justify;
+}
 
 .seccion-inicio{
   background-color: #11192D;
@@ -675,19 +681,24 @@ body{
   }
 
   .promociones{
-    width: 100%;
+    width: 94%;
     position: relative;
     padding: 0;
     left: 0;
     top: 6%;
     height: auto;
     text-align: center;
+    padding: 3%;
   }
   .promociones h2{
     margin: 0;
     font-size: 4vh;
     text-align: justify;
-    padding: 3%;
+  }
+  .promociones h3{
+    margin: 0;
+    font-size: 3.6vh;
+    text-align: justify;
   }
   .datos-inicio{
     width: 90%;
