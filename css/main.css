@@ -50,7 +50,28 @@ body{
   width: 95%;
 
 }
+#promocion-1{
+  display: block;
+}
+#promocion-2{
+  display: none;
+  padding: 2%;
+  background-color: rgba(158, 5, 48, 0.45);
+  text-align: center;
+}
+#promocion-2 h3{
+  text-align: center;
+}
 
+.corazon{
+  width: 5%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+.corazon img{
+  width: 100%;
+}
 .promociones{
   background-color: rgba(17, 25, 45, 0.45);
   position: absolute;
@@ -66,7 +87,9 @@ body{
   font-size: 4.5vh;
   color: white;
   margin: 1vh;
+  position: relative;
   text-align: justify;
+  display: inline;
 }
 .promociones h3{
   font-size: 4vh;
@@ -679,7 +702,9 @@ body{
     height: 11vh;
     width: 80%;
   }
-
+  #promocion-2{
+    padding: 3%;
+  }
   .promociones{
     width: 94%;
     position: relative;

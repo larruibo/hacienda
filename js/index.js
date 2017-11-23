@@ -18,6 +18,12 @@ jQuery(document).ready(function(){
 
 
   setTimeout(changeBanner2, 8000);
+  setTimeout(changePromo,4000);
+  function changePromo(){
+    $("#promocion-1").slideToggle();
+    $("#promocion-2").slideToggle();
+    setTimeout(changePromo,4000);
+  }
   function changeBanner1(){
     $("#foto-banner").fadeTo(500,0.1, function() {
       $("#foto-banner").attr("src",'fotos/banner-hacienda/1.jpg');
